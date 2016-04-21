@@ -1,0 +1,682 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html *, html *:before, html *:after {
+    box-sizing: border-box;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+html {
+	background-color: #F7E196;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.subwrapper {
+	position: relative;
+	top: -40px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	color: #981E11;
+}
+
+header {
+	background-color: #6C7653;
+	color: #FFFFFF;
+}
+
+.footer {
+	background-color: #6C7653;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	margin-top: 75px;
+	float: left;
+}
+.footer footer {
+	width: 990px;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: #CE7346;
+	color: #FFFFFF;
+	text-align: center;
+	border: #FFFFFF;
+}
+
+.logo {
+	max-width: 190px;
+	display: inline;
+}
+
+.icon {
+	max-height: 20px;
+}
+
+.social-media {
+	text-align: right;
+	width: 990px;
+	margin: 0 auto;
+	opacity: 0.50;
+	padding: 12px 0px 12px 12px;
+}
+
+.logo-alignment {
+	float: left;
+	position: relative;
+	top: -40px;
+	margin-bottom: -20px;
+}
+
+.homephotos, .homeinfo, .clubphotos, .clubinfo {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.exterior {
+	float: left;
+	width: 609px;
+}
+
+.interior {
+	float: left;
+	width: 381px;
+}
+
+.homered {
+	float: left;
+	width: 609px;
+	background-color: #981E11;
+	min-height: 400px;
+}
+
+.homepurple {
+	float: left;
+	width: 381px;
+	background-color: #2F2C47;
+	min-height: 400px;
+}
+
+.cake {
+	float: left;
+	width: 609px;
+}
+
+.croissant {
+	float: left;
+	width: 381px;
+}
+
+.clubred {
+	float: left;
+	width: 609px;
+	background-color: #981E11;
+	min-height: 400px;
+}
+
+.clubpurple {
+	float: left;
+	width: 381px;
+	background-color: #2F2C47;
+	min-height: 400px;
+}
+
+.homeredtext, .homepurpletext, .clubredtext, .signup {
+	padding: 0px 50px 50px 50px;
+	color: #FFFFFF;
+}
+
+.clubredtext, .clubpurpletext {
+	padding: 0px 50px 50px 50px;
+	color: #FFFFFF;
+}
+
+.homeredheading, .homepurpleheading, .clubredheading, .clubpurpleheading {
+	padding: 20px 50px 0px 50px;
+	color: #FFFFFF;
+}
+
+.aboutphoto {
+	width: 505px;
+	float: left;
+}
+
+.aboutwhoweare {
+	width: 485px;
+	float: left;
+	background-color: #981E11;
+	color: #FFFFFF;
+	padding: 20px 35px 35px 35px;
+	min-height: 404px;
+}
+
+.abouthistory {
+	width: 485px;
+	float: left;
+	background-color: rgba(255,255,255,0.5);
+	margin: 10px 10px 0px 0px;
+	padding: 35px;
+}
+
+.aboutmission {
+	width: 485px;
+	float: left;
+	background-color: #2F2C47;
+	color: #FFFFFF;
+	margin: 10px 0px 0px 10px;
+	padding: 35px;
+}
+
+.arthursimms {
+	width: 480px;
+	float: left;
+	margin: 0px 0px 10px 10px;
+}
+	
+.missionandpic {
+	float: left;
+}
+	
+.introbox {
+	width: 990px;
+	float: center;
+	background-color: #2F2C47;
+	color: #FFFFFF;
+	padding: 20px 50px 20px 50px;
+	margin: 0 auto;
+}
+
+.menuorder {
+	float: left;
+	background-color: #981E11;
+	width: 420px;
+	padding: 20px 35px 35px 35px;
+	margin: 0 auto;
+	right: 0;
+	top: 0;
+}
+	
+textinput {
+	color: #000000;
+}
+
+.menurow {
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+}
+.menuitems {
+	width: 570px;
+	margin: 0 auto;
+	float: left;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px 35px 35px 35px;
+}
+
+.menu-item {
+	border-bottom: solid;
+	border-color: #929497;
+	border-width: 1px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.menupics {
+	width: 200px;
+	float: left;
+}
+
+.menudescriptions {
+	width: 300px;
+	float: left;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.lookbelow {
+	color: #981E11;
+	padding: 30px;
+	/*float: left;*/
+	margin: 0 auto;
+	width: 990px;
+}
+
+.menu-and-form {
+	width: 990px;
+	float: left;
+	margin: 0 auto;
+}
+
+.centertitle {
+	text-align: center;
+}
+	
+.remove, .add, .ordertogo, .request {
+	background-color: #788FC1;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 5px 8px 5px 8px;
+	font-size: 12px;
+}
+
+.seemore {
+	background-color: #788FC1;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 12px 25px 12px 25px;
+	text-align: center;
+}
+
+.textinputs {
+	text-align: right;
+}
+
+select {
+	width: 238px;
+	float: right;
+}
+
+label {
+	float: left;
+	width: 110px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#quantity {
+	float: left;
+}
+
+.checkboxes {
+	float: right;
+	padding-left: 100px;
+	width: 500px;
+}	
+
+#specialoffers, #newsletters {
+	float: left;
+	text-align: left;
+}
+
+.homebutton1 {
+	padding: 12px 25px 12px 25px; 
+	background-color: #788FC1;
+	float: right;
+	margin-right: 50px;
+}
+
+.homebutton2 {
+	padding: 12px 25px 12px 25px;
+	background-color: #788FC1;
+	float: right;
+	margin-top: 45px;
+	margin-right: 50px;
+}
+	
+.homeaboutMimisbutton, .homejoineclubbutton {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.navigation {
+	float: right;
+	width: 680px;
+}
+
+.navigationbuttons {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.navigation ul {
+	padding-left: 0;
+}
+.navigation li {
+	display: inline;
+}
+.navigation li a {
+	display: inline-block;
+	padding: 8px 32px;
+}
+
+.menu {
+	width: 990px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.jointheclub {
+	background-color: #788FC1;
+	padding: 5px 25px 5px 25px;
+}
+
+form {
+	color: #FFFFFF;
+}
+
+.cities {
+	width: 330px;
+	margin: 0 auto;
+	float: left;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px 35px 35px 35px;
+}
+
+.cityinfo {
+	border-bottom: solid;
+	border-color: #929497;
+	border-width: 1px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.map {
+	width: 640px;
+	float: left;
+	margin-left: 20px;
+}
+
+.visit {
+	width: 640px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	background-color: #981E11;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+	}
+
+.clearfix:after {
+    clear: both;
+	}
+
+
+.container {
+	background-image: url("HamAndSwissCrepes_reg.jpg");
+	background-size: 100%;
+	width: 100%;
+}
