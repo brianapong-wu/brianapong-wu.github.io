@@ -1,0 +1,443 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+	
+html {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+
+.container-gradient-1 {
+	margin: 0 auto;
+	width: 100%;
+	height: 400px;
+	}
+	
+#gradient-1 {
+	background: linear-gradient(#D8D0E7, #FFFFFF);
+	}
+
+.container-gradient-2 {
+	margin: 0 auto;
+	width: 100%;
+	height: 600px;
+	}
+	
+#gradient-2 {
+	background: linear-gradient(#FFFFFF, #D8D0E7);
+	}
+
+.title {
+	color: #2B3990;
+	text-align: center;
+	font-size: 3em;
+	margin-top: 5px;
+	}
+
+.subheading {
+	color: #2E7B57;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.25em;
+	}
+
+.subheading2 {
+	color: #2E7B57;
+	font-size: 1.25em;
+	font-weight: bold;
+	line-height: 1em;
+	}
+
+.container0 {
+	margin: 0 auto;
+	width: 990px;
+	}
+	
+.container01 {
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 990px;
+	}
+	
+
+.header {
+	background-color: #FAAA2C;
+	height: 100px;
+	clear: right;
+	padding-top: 10px;
+	margin: 0 auto;
+	}
+	
+.container2 {
+	background-color: #0B6B9B;
+	height: 475px;
+	clear: right;
+	padding-top: 25px;
+	margin: 0 auto;
+	}
+	
+.column1 {
+	width: 450px;
+	float: left;
+	}
+
+.column2 {
+	width: 450px;
+	height: 750px;
+	}
+
+.float-left {
+	float: left;
+	clear: right; 
+	}
+
+.float-right {
+	float: right;
+	}
+
+.align-center {
+	align: center;
+	}
+
+.screenshots-and-descriptions {
+	margin-top: 30px;
+	float: left;
+	}
+
+.screenshots {
+	width: 175px;
+	margin-bottom: 10px;
+	}
+
+.product-description {
+	float: left;
+	margin-left: 25px;
+	width: 250px;
+	margin-top: -20px;
+	}
+	
+.purchase-plan {
+	font-size: 2em;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	}
+
+.plan1 {
+	float: left;
+	background-color: #FFFFFF;
+	width: 313px;
+	height: 315px;
+	padding: 20px;
+	text-align: center;
+	}
+
+.plan2 {
+	float: left;
+	background-color: #FFFFFF;
+	width: 313px;
+	height: 315px;
+	padding: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	}
+
+.plan3 {
+	float: left;
+	background-color: #FFFFFF;
+	width: 313px;
+	height: 315px;
+	padding: 20px;
+	text-align: center;
+	}
+
+.planname {
+	font-weight: bold;
+	font-size: 1.115em;
+	}
+
+.plan-description {
+	font-size: 0.90em;
+	}
+
+.price {
+	font-weight: bold;
+	font-size: 1.75em;
+	}
+
+#plan3-price {
+	padding-top: 20px;
+	}
+
+.buy-or-learn {
+	padding-left: 30px;
+	padding-right: 30px;
+	}
+
+.buy {
+	background-color: #FAAA2C;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+.buy-now {
+	color: #000000;
+	text-decoration: none;
+	}
+
+label {
+	float: left;
+	font-size: 1em;
+	}
+	
+.more-info {
+	font-size: 0.65em;
+	margin-left: 10px;
+	}
+	
+
+.more-info-2 {
+	font-size: 0.65em;
+	margin-left: 25px;
+	}
+
+input {
+	float: right;
+	}
+	
+select {
+	width: 330px;
+	float: right;
+	}
+
+.cc-logo {
+	float: left;
+	height: 65px;
+	margin-top: 32px;
+	margin-right: 10px;
+	}
+	
+.sign-up {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	}
+	
+#sign-up {
+	color: #2E7B57;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.25em;
+	}
+
+#checkbox {
+	float: left;
+	}
+	
+.agreements {
+	float: left;
+	margin-left: 120px;
+	}
+	
+.contact {
+	float: left;
+	margin-top: 150px;
+	margin-left: 150px;
+	font-weight: bold;
+	font-size: 1.25em;
+	line-height: 1em;
+	}
+
+#submit {
+	color: #FFFFFF;
+	background-color: #0B6B9B;
+	width: 330px;
+	height: 35px;
+	float: right;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+	
+a {
+	color: #B0509E;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+	
+	
+}
