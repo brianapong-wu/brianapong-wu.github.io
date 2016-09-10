@@ -56,8 +56,8 @@ textarea {
    ========================================================================== */
 	
 html {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	}
+	font-family: 'Quattrocento Sans', sans-serif;
+}
 
 .container-gradient-1 {
 	margin: 0 auto;
@@ -79,11 +79,18 @@ html {
 	background: linear-gradient(#FFFFFF, #D8D0E7);
 	}
 
+#lightroom-logo {
+	float: left;
+	width: 60px;
+	}
+
 .title {
 	color: #2B3990;
 	text-align: center;
 	font-size: 3em;
+	font-weight: bold;
 	margin-top: 5px;
+	margin-right: 60px;
 	}
 
 .subheading {
@@ -165,7 +172,7 @@ html {
 	float: left;
 	margin-left: 25px;
 	width: 250px;
-	margin-top: -20px;
+	margin-top: -15px;
 	}
 	
 .purchase-plan {
@@ -242,16 +249,18 @@ html {
 label {
 	float: left;
 	font-size: 1em;
+	clear: right;
 	}
 	
 .more-info {
-	font-size: 0.65em;
-	margin-left: 10px;
+	font-size: 0.85em;
+	margin-top: -15px;
+	margin-left: 25px;
 	}
 	
 
 .more-info-2 {
-	font-size: 0.65em;
+	font-size: 0.85em;
 	margin-left: 25px;
 	}
 
@@ -274,6 +283,8 @@ select {
 .sign-up {
 	margin-top: 50px;
 	margin-bottom: 20px;
+	margin-left: 120px;
+	
 	}
 	
 #sign-up {
@@ -290,6 +301,7 @@ select {
 .agreements {
 	float: left;
 	margin-left: 120px;
+	width: 330px;
 	}
 	
 .contact {
