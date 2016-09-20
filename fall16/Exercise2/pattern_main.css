@@ -1,0 +1,329 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.container {
+	margin: 0 auto;
+	width: 990px;
+}
+
+.float-left {
+	float: left;
+	clear: right;
+}
+
+.square-groups {
+	position: fixed;
+}
+
+#square-1, #square-2, #square-3, #square-4, #square-5, #square-6, #square-7, #square-8, #square-9, #square-10, #square-11, #square-12, #square-13, #square-14, #square-15, #square-16, #square-17, #square-18, #square-19, #square-20, #square-21, #square-22, #square-23, #square-24, #square-25, #square-26, #square-27, #square-28, #square-29, #square-30 {
+	background-color: #146D19;
+	width: 30px;
+	height: 30px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	margin-right: 150px;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+	 
+#fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .50;
+    }
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: .50;
+	}
+    100% {
+        opacity: 0;
+    }
+}
+
+.vertical-group {
+	margin-top: 25px;
+}
+
+#vertical-1, #vertical-3, #vertical-5, #vertical-7, #vertical-9 {
+	background-color: #AA31C5;
+	width: 40px;
+	height: 450px;
+	float: left;
+	margin-right: 80px;
+	animation-name: slide-down;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide-down {
+	0% {transform: translate(0,160px);
+	}
+	25% {transform: translate(50px,80px);
+	}
+	50% {transform: translate(100px,0);
+	}
+	75% {transform: translate(50px,80px);
+	}
+	100% {transform: translate(0,160px);
+	}
+}
+
+#vertical-2, #vertical-4, #vertical-6, #vertical-8 {
+	background-color: #F3E65D;
+	width: 40px;
+	height: 450px;
+	float: left;
+	margin-right: 80px;
+	animation-name: slide-up;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide-up {
+	0% {transform: translate(0,0);
+	}
+	25% {transform: translate(50px,80px);
+	}
+	50% {transform: translate(100px,160px);
+	}
+	75% {transform: translate(50px,80px);
+	}
+	100% {transform: translate(0,0);
+	}
+}
+
+.horizontal-group {
+	margin-top: -25px;
+}
+
+#horizontal-1, #horizontal-3, #horizontal-5, #horizontal-7, #horizontal-9 {
+	background-color: #C41D20;
+	width: 600px;
+	height: 25px;
+	margin-top: 50px;
+	margin-right: 50px;
+	animation-name: slide-right;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide-right {
+	0% {transform: translate(0,0);
+	}
+	25% {transform: translate(200px,80px);
+	}
+	50% {transform: translate(400px,160px);
+	}
+	75% {transform: translate(200px,80px);
+	}
+	100% {transform: translate(0,0);
+	}
+}
+
+#horizontal-2, #horizontal-4, #horizontal-6, #horizontal-8 {
+	background-color: #FD87DD;
+	width: 600px;
+	height: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	animation-name: slide-left;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide-left{
+	0% {transform: translate(400px,0);
+	}
+	25% {transform: translate(200px,80px);
+	}
+	50% {transform: translate(0,160px);
+	}
+	75% {transform: translate(200px,80px);
+	}
+	100% {transform: translate(400px,0);
+	}
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
