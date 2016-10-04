@@ -11,6 +11,15 @@
             /*
              * Banner container, do not change
              */
+			 
+			html {
+				font-family: "Century Gothic", sans-serif;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
             #medium-rectangle {
                 background: #fff;
                 border: 1px solid #ccc;
@@ -22,57 +31,645 @@
                 position: relative;
                 width: 300px;
             }
-
-            /*
-             * Ryan's sample banner ad styles
-             */
-            .ball {
-                background: #0CF;
-                border-radius: 50%;
-                height: 50px;
-                width: 50px;
-                position: absolute;
-                animation-name: move, color;
-                animation-duration: 2s, 1s;
-                animation-iteration-count:infinite;
-            }
-            @keyframes move {
-                0% {
-                    top: calc(0% - 25px);
-                    left: calc(0% - 25px);
-                }
-                40% {
-                    top: calc(100% - 25px);
-                    left: calc(100% - 25px);
-                }
-                50% {
-                    top: calc(0% - 25px);
-                    left: calc(100% - 25px);
-                }
-                90% {
-                    top: calc(100% - 25px);
-                    left: calc(0% - 25px);
-                }
-                100% {
-                    top: calc(0% - 25px);
-                    left: calc(0% - 25px);
-                }
-            }
-            @keyframes color {
-                0% {
-                    background:#0CF;
-                }
-                100% {
-                    background:#990;
-                }
-            }
+			
+			.background-blue {
+				background-color: #8199CE;
+				width: 300px;
+				height: 250px;
+				animation-name: background-color-change;
+				animation-duration: 15s;
+				animation-delay: 0s;
+				animation-iteration-count: 1;
+			}				
+			
+			@keyframes background-color-change {
+				0% {
+					background-color: #8199CE;
+				}
+				40% {
+					background-color: #8199CE;
+				}
+				70% {
+					background-color: #FEE56C;
+				}
+				100% {
+					background-color: #007755;
+				}
+			}
+							
+			#feeling {
+				color: #FFFFFF;
+				font-size: 1.75em;
+				font-weight: bold;
+				animation-name: slide-down, slide-right;
+				animation-duration: 2.5s, 2s;
+				animation-delay: 0s, 2.5s;
+				animation-iteration-count: 1, 1;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes slide-down {
+				0% {
+					transform: translate(25px,-100px);	
+				}
+				
+				100% {
+					transform: translate(25px,80px);
+				}
+			}
+			
+			@keyframes slide-right {
+				0% {
+					transform: translate(25px,80px);
+				}
+				
+				100% {
+					transform: translate(400px,80px);
+				}
+			}
+			
+			#compassionate {
+				color: #FFFFFF;
+				font-size: 1.75em;
+				font-weight: bold;
+				animation-name: slide-up, slide-left;
+				animation-duration: 2.5s, 2s;
+				animation-delay: 0s, 2.5s;
+				animation-iteration-count: 1, 1;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes slide-up {
+				0% {
+					transform: translate(25px,370px);
+				}
+				100% {
+					transform: translate(25px,80px);
+				}
+			}
+				
+			@keyframes slide-left {
+				0% {
+					transform: translate(25px,80px);
+				}
+				100% {
+					transform: translate(-300px,80px);
+				}
+			}
+			
+			#expand-left {
+				background-color: #FFFFFF;
+				height: 1px;
+				bottom: 70px;
+				opacity: 0;
+				position: absolute;
+				animation-name: draw-left, draw-up;
+				animation-duration: 1s, 2s;
+				animation-delay: 3.1s, 4s;
+				animation-iteration-count: 1, 1;
+				animation-timing-function: ease-in-out, ease-in-out;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes draw-left {
+				0% {
+					opacity: 0;
+					transform: translate(75px,0);
+					width: 0px;
+				}
+				100% {
+					opacity: 1;
+					transform: translate(35px,0);
+					width: 100px;
+				}
+			}
+			
+			@keyframes draw-up {
+				0% {
+					height: 1px;
+					opacity: 1;
+				}
+				90% {
+					height: 125px;
+					opacity: 1;
+				}
+				100% {
+					heaight: 125px;
+					opacity: 0;
+				}
+			}
+			
+			#expand-right {
+				background-color: #FFFFFF;
+				height: 1px;
+				top: 10px;
+				opacity: 0;
+				position: absolute;
+				animation-name: draw-right, draw-down;
+				animation-duration: 1s, 2s;
+				animation-delay: 3.1s, 4s;
+				animation-iteration-count: 1, 1;
+				animation-timing-function: ease-in-out, ease-in-out;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes draw-right {
+				0% {
+					opacity: 0;
+					transform: translate(155px,45px);
+					width: 0px;
+				}
+				100% {
+					opacity: 1;
+					transform: translate(165px,45px);
+					width: 100px;
+				}
+			}
+			
+			@keyframes draw-down {
+				0% {
+					height: 1px;
+					opacity: 1;
+				}
+				90% {
+					height: 125px;
+					opacity: 1;
+				}
+				100% {
+					height: 125px;
+					opacity: 0;
+				}
+			}
+			
+			#image-1 {
+				background-color: #FFFFFF;
+				height: 125px;
+				width: 100px;
+				float: left;
+				margin-top: -13px;
+				margin-left: 35px;
+				margin-right: 30px;
+				animation-name: aligned-image-1;
+				animation-duration: 2s;
+				animation-delay: 5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes aligned-image-1 {
+				0% {
+					opacity: 0;
+				}
+				80% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}	
+			
+			#image-2 {
+				background-color: #FFFFFF;
+				height: 125px;
+				width: 100px;
+				float: left;
+				margin-top: -13px;
+				margin-right: 35px;
+				animation-name: aligned-image-2;
+				animation-duration: 2s;
+				animation-delay: 5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes aligned-image-2 {
+				0% {
+					opacity: 0;
+				}
+				80% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			
+			#image-3 {
+				position: absolute;
+				height: 125px;
+				width: 100px;
+				float: left;
+				margin-top: -5px;
+				margin-left: 35px;
+				margin-right: 25px;
+				animation-name: left-half, snap-left;
+				animation-duration: 1s, 1s;
+				animation-delay: 7s, 8s;
+				animation-iteration-count: 1, 1;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes left-half {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes snap-left {
+				0% {
+					transform: translate(0px,0px);
+				}
+				100% {
+					transform: translate(15px,0px);
+				}
+			}
+			
+			#image-4 {
+				position: absolute;
+				height: 125px;
+				width: 100px;
+				float: left;
+				margin-top: -5px;
+				margin-right: 35px;
+				animation-name: right-half, snap-right;
+				animation-duration: 1s, 1s;
+				animation-delay: 7s, 8s;
+				animation-iteration-count: 1, 1;
+				animation-fill-mode: both, both;
+			}
+				
+			@keyframes right-half {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes snap-right {
+				0% {
+					transform: translate(165px,0px);
+				}
+				100% {
+					transform: translate(150px,0px);
+				}
+			}
+			
+			#piece-1 {
+				height: 62.5px;
+				width: 250px;
+				animation-name: upper-left;
+				animation-duration: 2s;
+				animation-delay: 9s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes upper-left {
+				0% {
+					transform: translate(0px,-300px);
+					opacity: 0;
+				}
+				100% {
+					transform: translate(0,-180px);
+					opacity: 1;
+				}
+			}
+					
+			
+			#piece-2 {
+				height: 75px;
+				width: 250px;
+				animation-name: bottom-right;
+				animation-duration: 2s;
+				animation-delay: 9s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes bottom-right {
+				0% {
+					transform: translate(50px,10px);
+				}
+				100% {
+					transform: translate(50px,-70px);
+				}
+			}
+			
+			#piece-3 {
+				height: 195px;
+				width: 50px;
+				animation-name: bottom-left;
+				animation-duration: 2s;
+				animation-delay: 9s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes bottom-left {
+				0% {
+					transform: translate(-100px,-265px);
+				}
+				100% {
+					transform: translate(-50px,-265px);
+				}
+			}
+			
+			#piece-4 {
+				height: 187.5px;
+				width: 50px;
+				float: left;
+				animation-name: top-right;
+				animation-duration: 2s;
+				animation-delay: 9s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes top-right {
+				0% {
+					transform: translate(350px,-325px);
+				}
+				100% {
+					transform: translate(250px,-325px);
+				}
+			}
+			
+			#full-image {
+				height: 250px;
+				width: 510px;
+				float: left;
+				animation-name: full-screen, pan;
+				animation-duration: 0.5s, 3s;
+				animation-delay: 11s, 11.5s;
+				animation-iteration-count: 1, 1;
+				animation-fill-mode: both, both;
+			}
+			
+			@keyframes full-screen {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes pan {
+				0% {
+					transform: translate(0px,-525px);	
+				}
+				100% {
+					transform: translate(-147px,-525px);
+				}
+			}
+			
+			#introducing {
+				color: #FFFFFF;
+				font-size: 1em;
+				margin-right: 75px;
+				float: right;
+				animation-name: introduction;
+				animation-duration: 4s;
+				animation-delay: 14.5s;
+				animation-iteration-count: 1;
+				animation-timing-function: ease-in-out;
+			}
+			
+			@keyframes introduction {
+				0% {
+					transform: translate(50px,-585px);
+					opacity: 0;
+				}
+				50% {
+					transform: translate(50px,-585px);
+					opacity: 1;
+				}
+				100% {
+					transform: translate(50px,-585px);
+					opacity: 0;
+				}
+			}
+			
+			#logo-swipe {
+				width: 18px;
+				margin-right: 75px;
+				float: left;
+				animation-name: appear, swipe;
+				animation-duration: 0.5s, 2.5s;
+				animation-delay: 15s, 15.5s;
+				animation-iteration-count: 1, 1;
+				animation-timing-function: ease-in-out, ease-in-out;
+			}
+			
+			@keyframes appear {
+				0% {
+					transform: translate(251px,-598px);
+					opacity: 0;
+				}
+				100% {
+					transform: translate(251px,-598px);
+					opacity: 1;
+				}
+			}
+			
+			@keyframes swipe {
+				0% {
+					transform: translate(251px,-598px);
+					width: 18px;
+					opacity: 1;
+				}
+				85% {
+					transform: translate(0px,-640px);
+					width: 90px;
+					opacity: 1;
+				}
+				100% {
+					transform: translate(0px,-640px);
+					width: 90px;
+					opacity: 0;
+				}
+			}
+			
+			#help-text {
+				color: #FFFFFF;
+				font-size: 1em;
+				float: right;
+				margin-right: 35px;
+				animation-name: message;
+				animation-duration: 4s;
+				animation-delay: 18s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+				animation-timing-function: ease-in-out;
+			}
+				
+			@keyframes message {
+				0% {
+					opacity: 0;
+					transform: translate(0px,-625px);
+				}
+				50% {
+					opacity: 1;
+					transform: translate(0px,-625px);
+				}
+				100% {
+					opacity: 0;
+					transform: translate(0px,-625px);
+				}
+			}
+			
+			#white-circle {
+				height: 325px;
+				width: 325px;
+				margin-left: 35px;
+				animation-name: last-scene;
+				animation-duration: 5s;
+				animation-delay: 22.5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+				animation-timing-function: ease-in-out;
+			}
+			
+			@keyframes last-scene {
+				0% {
+					transform: translate(-47px,-900px);
+					opacity: 0;
+					width: 325px;
+				}
+				40% {
+					transform: translate(-47px,-900x);
+					opacity: 1;
+					width: 325px;
+				}
+				100% {
+					transform: translate(-47px,-900px);
+					opacity: 1;
+					width: 325px;
+				}
+			}
+			
+			#call-to-action {
+				top: 0;
+				position: absolute;
+				margin-left: 45px;
+				margin-top: 50px;
+				color: #000000;
+				text-align: center;
+				font-size: 1.5em;
+				float: left;
+				animation-name: join-us;
+				animation-duration: 5s;
+				animation-delay: 22.5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes join-us {
+				0% {
+					opacity: 0;
+				}
+				40% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			#go-now {
+				top: 0;
+				position: absolute;
+				margin-left: 85px;
+				margin-top: 125px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 25px;
+				padding-right: 25px;
+				color: #FFFFFF;
+				background-color: #007755;
+				text-align: center;
+				font-size: 1em;
+				float: left;
+				animation-name: button;
+				animation-duration: 5s;
+				animation-delay: 22.5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes button {
+				0% {
+					opacity: 0;
+				}
+				40% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+					
+			#logo {
+				top: 0;
+				position: absolute;
+				float: left;
+				margin-top: 175px;
+				margin-left: 110px;
+				width: 75px;
+				animation-name: final-logo;
+				animation-duration: 5s;
+				animation-delay: 22.5s;
+				aimation-iteration-count: 1;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes final-logo {
+				0% {
+					opacity: 0;
+				}
+				40% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
         </style>
     </head>
     <body>
         <a href="#" id="medium-rectangle">
             <!--markup for banner goes below-->
-            <div class="ball"></div>
+            <div class="background-blue">
+                <div id="feeling">Feeling</div>
+                <div id="compassionate">COMPASSIONATE?</div>
+                <div id="expand-left"></div>
+                <div id="expand-right"></div>
+                <img id="image-1" src="barista.jpg" alt="Barista" />
+                <img id="image-2" src="farmer.jpg" alt="Farmer" />
+                <img id="image-3" src="image-3.jpg" alt="Left Middle Piece" />
+                <img id="image-4" src="image-4.jpg" alt="Right Middle Piece" />
+            	<img id="piece-1" src="piece-1.jpg" alt="Upper Left Piece" />
+                <img id="piece-2" src="piece-2.jpg" alt="Lower Right Piece" />
+                <img id="piece-3" src="piece-3.jpg" alt="Lower Left Piece" />
+                <img id="piece-4" src="piece-4.jpg" alt="Upper Right Piece" />
+                <img id="full-image" src="192060.jpg" alt="Starbucks Foundation" />
+            	<div id="introducing">Introducing the <br /> <strong>Starbucks Foundation</strong></div>
+                <div class="background-red">
+                    <img id="logo-swipe" src="Starbucks-Logo-HD.png" alt="Starbucks logo" />
+                    <div id="help-text">Let's all help our <br /> <strong>global communities</strong></div>
+                    <img id="white-circle" src="white-circle.svg" alt="White Circle" />
+                    <div id="call-to-action"><strong>JOIN US</strong> <br /> in our quest today!</div>
+                    <div id="go-now">GO NOW</div>
+                    <img id="logo" src="Starbucks-Logo-HD.png" alt="Starbucks logo" />
+                </div>
+            </div>
             <!--markup for banner goes above-->
-        </div>
+        </a>
     </body>
 </html>
