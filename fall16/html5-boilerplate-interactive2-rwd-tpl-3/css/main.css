@@ -952,6 +952,31 @@ html {
 	font-family: 'Muli', sans-serif;
 }
 
+@media screen and (max-width: 543px) {
+	html {
+		font-size: .75em
+	}
+}
+
+@media screen and (max-width: 767px) {
+	html {
+		font-size: .875em
+	}
+}
+
+#wrapper {
+	max-width: 990px;
+	position: relative;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 544px) {
+	#wrapper {
+		max-width: 1190px;
+		padding-left: 200px;
+	}
+}
+
 nav {
 	width: 150px;
 	margin-left: 25px;
@@ -959,14 +984,33 @@ nav {
 	text-align: center;
 	top: 175px;
 	position: absolute;
+	left: 0;
+}
+
+.navigation {
+	list-style: none;
+}
+
+.navigation-list {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	padding: 15px;
+}
+
+#navigation-list-contact {
+	padding-top: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
 }
 
 .container-all {
 	margin-top: 10px;
-	margin-left: 200px;
-	margin-right: 200px;
-	width: 990px;
-	float: left;
+	width: 100%;
+	
 }
 
 .social-media {
@@ -992,34 +1036,38 @@ nav {
 	color: #E07E52;
 	font-size: 2em;
 	margin-top: 35px;
-	width: 600px;
 }
 
-.four-grads {
+.title-image {
+	position: relative;
+	left: -1em;
+}
+
+.starbucks-employees, .indian-students, .four-grads, .veteran-family {
 	margin-top: 25px;
+	width: 100%;
 }
 
 .black-box-title {
-	width: 5em;
-	height: 2em;
 	color: #FFFFFF;
 	background-color: #000000;
-	right: 12.5em;
+	top: 0px;
+	right: 0px;
 	position: absolute;
 	text-align: center;
-	padding: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	width: 30%;
 }
 
 .description {
 	padding-top: 25px;
 	padding-left: 0px;
 	padding-right: 15px;
-	width: 60%;
 	float: left;
 }
 
 .college-image-box {
-	width: 40%;
 	float: left;
 }
 
@@ -1047,18 +1095,15 @@ nav {
 
 .cup-with-cap {
 	float: left;
-	width: 42%;
 }
 
 .black-text-1 {
-	width: 58%;
 	color: #FFFFFF;
 	float: left;
 	padding-left: 25px;
 }
 
 .black-text-2 {
-	width: 42%;
 	color: #FFFFFF;
 	float: left;
 	clear: both;
@@ -1068,7 +1113,6 @@ nav {
 }
 
 .hug {
-	width: 50%;
 	float: left;
 	margin-top: 25px;
 }
@@ -1078,13 +1122,13 @@ nav {
 }
 
 .college-specifics-1 {
-	width: 100%;
 	margin-top: 25px;
 	margin-bottom: 50px;
 }
 
 .college-specifics-2 {
-	width: 100%;
+	float: left;
+	clear: both;
 }
 
 .orange-titles {
@@ -1092,14 +1136,12 @@ nav {
 }
 
 .asu-logo, .veteran-cup {
-	width: 40%;
 	float: left;
+	clear: both;
+	width: 100%;
 }
 
-
-
 .asu-description, .veteran-college-description {
-	width: 60%;
 	padding-left: 25px;
 	float: left;
 }
@@ -1122,16 +1164,239 @@ footer {
 	color: #FFFFFF;
 }
 
+.questions-comments {
+	color: #FFFFFF;
+	background-color: #414042;
+	width: 100%;
+	font-size: 1.5em;
+	margin-top: 1em;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
 
+.starbucks-signage {
+	float: left;
+	margin-top: 1em;
+	margin-left: -1em;
+}
 
+.form-contact {
+	color: #FFFFFF;
+	background-color: #976463;
+	width: 30em;
+	height: 451px;
+	float: left;
+	margin-top: 1.15em;
+	margin-left: -2.25em;	
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 0.875em;
+}
 
+.attributes {
+	margin-right: 1em;
+}
 
+.input-text {
+	float: right;
+}
 
+.how-can-we-help {
+	margin-top: 2em;
+}
 
+.input-send {
+	color: #000000;
+	background-color: #7FCFD5;
+	margin-top: 1.5em;
+	margin-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: right;
+}
 
+.starbucks-corporation-info {
+	float: left;
+	width: 16em;
+	margin-top: 1.5em;
+	font-size: 0.875em;
+}
 
+.youth-text-box {
+	float: left;
+	padding-top: 25px;
+	width: 100%;
+}
 
+.youth-description {
+	margin-bottom: 25px;
+}
 
+.youth-headings, .farming-headings {
+	font-size: 1em;
+	color: #E07E52;
+}
+
+.youth-programs-list{
+	margin-bottom: 25px;
+	float: left;
+	
+}
+
+.bamozai-students {
+	margin-top: 25px;
+	width: 100%;
+	float: left;
+}
+
+.youth-programs-image {
+	margin-top: 25px;
+}
+
+.youth-grant-recipients-title {
+	padding-left: 40px;
+}
+
+.youth-grant-recipients {
+	float: left;
+	color: #FFFFFF;
+	background-color: #976463;
+	margin-top: 25px;
+	margin-left: -15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 25px;
+	font-size: 0.75em;
+}
+
+.veterans-text-box {
+	margin-top: 25px;
+}
+
+.veterans-description {
+	margin-bottom: 25px;
+}
+
+.veterans-opportunities-list {
+	margin-bottom: 25px;
+}
+
+.veterans-support-list {
+	margin-bottom: 25px;
+}
+
+.veterans-package {
+	width: 100%
+}
+
+.veterans-egift {
+	background-color: #976463;
+	color: #FFFFFF;
+	float: left;
+	font-size: 0.875em;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+select {
+	margin-right: 150px;
+}
+
+legend {
+	font-style: bold;
+	padding-top: 25px;
+}
+
+.coffee-farmer {
+	width: 100%;
+	margin-top: 25px;
+	float: left;
+}
+
+.farming-text-box {
+	float: left;
+	margin-top: 25px;
+}
+
+.farming-healthier-lives {
+	color: #FFFFFF;
+	background-color: #976463;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.partnerships {
+	margin-top: 50px;
+}
+
+.partner {
+	width: 33.333%;
+	height: 100%;
+	padding: 25px;
+	vertical-align: middle;
+
+	float: left;
+}
+
+.logo {
+	width: 95%;
+}
+
+.welcome {
+	margin-top: 25px;
+}
+
+.welcome-heading {
+	color: #976463;
+}
+
+.our-history {
+	background-color: #976463;
+	color: #FFFFFF;
+	margin-top: 25px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.graduates-line {
+	width: 100%;
+	margin-top: 25px;
+}
+
+.call-to-action-college {
+	width: 65%;
+	float: right;
+	top: -96px;
+}
+
+.call-to-action-college-text {
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	float: right;
+	text-align: right;
+	font-size: 1.5em;
+	position: relative;
+	padding: 15px;
+}
+
+.arrow {
+	width: 5%;
+	float: right;
+	
+}
+
+	
 /* ==========================================================================
    Helper classes
    ========================================================================== */
