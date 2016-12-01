@@ -16,29 +16,6 @@
     <body>
     
     <div id="wrapper">
-    	
-         <nav>
-            	<ul class="navigation">
-                	<li class="navigation-list"><a href="StarbucksFoundation_Home.html">
-                		HOME
-                    </a></li>
-                    <li class="navigation-list"><a href="StarbucksFoundation_Youth.html">
-                		YOUTH
-                    </a></li>
-                    <li class="navigation-list"><a href="StarbucksFoundation_Veterans.html">
-                		VETERANS
-                   	</a></li>
-                	<li class="navigation-list"><a href="StarbucksFoundation_Farming.html">
-                    	FARMING
-                    </a></li>
-                    <li class="navigation-list"><a href="StarbucksFoundation_College.html">
-                		COLLEGE
-                    </a></li>
-                    <li id="navigation-list-contact"><a href="StarbucksFoundation_Contact.html">
-                		CONTACT
-                    </a></li>
-                    </ul>
-            </nav>
     
     <div class="container-all">
         <header class="row">
@@ -57,30 +34,61 @@
                 </a>
             </div>
         </header>
-        
+    
+    	<button type="button" id="nav-menu-btn" class="nav-menu-btn" aria-haspopup="true" aria-expanded="false">
+    			<span class="menu-icon">
+                	<div class="bar hamburger-menu"></div>
+                	<span class="visuallyhidden">Open</span>
+                </span><img src="Starbucks-Foundation/hamburger-menu.svg" alt="Menu" />
+			</button>
+         <nav id="nav-menu" class="nav-menu">
+            	<ul class="navigation">
+                	<li class="navigation-list"><a href="StarbucksFoundation_Home.html">
+                		HOME
+                    </a></li>
+                    <li class="navigation-list"><a href="StarbucksFoundation_Youth.html">
+                		YOUTH
+                    </a></li>
+                    <li class="navigation-list"><a href="StarbucksFoundation_Veterans.html">
+                		VETERANS
+                   	</a></li>
+                	<li class="navigation-list"><a href="StarbucksFoundation_Farming.html">
+                    	FARMING
+                    </a></li>
+                    <li class="navigation-list"><a href="StarbucksFoundation_College.html">
+                		COLLEGE
+                    </a></li>
+                    <li class="navigation-list-contact"><a href="StarbucksFoundation_Contact.html">
+                		CONTACT
+                    </a></li>
+                    </ul>
+            </nav>
+
         <div class="container">
             <div class="row">
-                <div class="col-xs-10 push-xs-1 col-md-12 push-sm-0 col-lg-12 text-center heading">
-                    <a href="StarbucksFoundation_Home.html"><img src="Starbucks-Foundation/Starbucks_Coffee_Logo.svg.png" alt="Starbucks logo" class="starbucks-logo" /></a>
-                    <div class="the-starbucks-foundation">
-                    	THE STARBUCKS FOUNDATION
+            	<div class="heading">
+                    <div class="col-xs-2">
+                        <a href="StarbucksFoundation_Home.html"><img src="Starbucks-Foundation/starbucks_coffee_logo_75x75.png" alt="Starbucks logo" class="img-responsive starbucks-logo" /></a>
+                    </div>
+                    <div class="col-xs-10 the-starbucks-foundation">
+                            THE STARBUCKS FOUNDATION
                     </div>
                 </div>
             </div>
             
             <div class="row">
-            	<div class="col-xs-10 push-xs-1 col-md-12 push-sm-0 col-lg-12 text-center questions-comments">
+            	<div class="col-xs-12 text-center questions-comments">
                 	Questions or Comments?
                 </div>
             </div>
             
             <div class="row">
-            	<div class="col-xs-12 push-xs-1 col-md-12 push-sm-0 col-lg-4 text-center">
-                	<img src="Starbucks-Foundation/starbucks-signage.jpg" alt="Starbucks Signage" class="starbucks-signage img-responsive" />
+            	<div class="col-xs-12 col-lg-4">
+                	<img src="Starbucks-Foundation/starbucks-signage.jpg" alt="Starbucks Signage" class="starbucks-signage img-responsive">  
                 </div>
-                <div class="col-xs-12 push-xs-1 col-md-12 push-sm-0 col-lg-4 text-center form-contact">
+                <div class="col-xs-12 col-lg-5 text-center form-contact">
                		<h2 class="heading-contact-us">Contact Us</h2>
-                    <form action="...">
+                    <form action="StarbucksFoundation_ContactConfirmationPage.html">
                     	<p class="attributes">First name
                         	<input type="text" name="first-name" size="30" maxlength="30" class="input-text" />
                         </p>
@@ -94,12 +102,12 @@
                         	<input type="text" name="phone" size="30" maxlength="30" class="input-text" />
                         </p>
                         <strong><p class="how-can-we-help">How can we help you?</p></strong>
-                        	<textarea name="comment-box" cols="49" rows="5"></textarea>
+                        	<textarea name="comment-box" cols="45" rows="5"></textarea>
                             	<br />
                        	<input type="submit" name="send" value="Send" class="input-send" />
                     </form>
                 </div>
-                <div class="col-xs-12 push-xs-1 col-md-12 push-sm-0 col-lg-4 text-center starbucks-corporation-info">
+                <div class="col-xs-12 col-lg-3 starbucks-corporation-info">
                 	<h3 class="contact-info">Starbucks Corporation</h3>
                     <p>Starbucks Headquarters <br /> 2401 Utah Avenue South <br /> Seattle, WA 98134</p>
                     <p><em>Open 5:00am–6:30pm <br /> Mondays thru Fridays</em></p>

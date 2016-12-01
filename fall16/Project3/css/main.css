@@ -973,19 +973,33 @@ html {
 @media screen and (min-width: 544px) {
 	#wrapper {
 		max-width: 1190px;
+		padding-left: 150px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#wrapper {
+		max-width: 1190px;
 		padding-left: 200px;
 	}
 }
 
 nav {
-	width: 150px;
-	margin-left: 25px;
-	margin-right: 25px;
-	text-align: center;
-	top: 175px;
-	position: absolute;
-	left: 0;
+	overflow: hidden;
 }
+
+@media screen and (min-width: 544px) {
+	nav {
+		width: 150px;
+		margin-left: 25px;
+		margin-right: 25px;
+		text-align: center;
+		top: 175px;
+		position: absolute;
+		left: 0;
+	}
+	
+} 
 
 .navigation {
 	list-style: none;
@@ -998,13 +1012,90 @@ nav {
 	padding: 15px;
 }
 
-#navigation-list-contact {
+
+
+.navigation-list-contact {
 	padding-top: 15px;
+	padding-right: 15px;
+
+}
+
+.navigation-list-contact-orange {
+	padding-top: 15px;
+	padding-right: 15px;
+	color: #E07E52;
 }
 
 a {
 	text-decoration: none;
 	color: #000000;
+}
+
+a:hover {
+	color: #E07E52;
+}
+
+.nav-menu-btn {
+    padding: 5px;
+    border: none;
+}
+
+.menu-icon {
+    display: block;
+    margin: 0 auto 5px;
+    height: 15px;
+    margin-bottom: 2px;
+    position: relative;
+    width: 15px;
+}
+
+@media screen and (min-width: 544px) {
+	.menu-icon {
+		overflow: hidden;
+		display: block;
+		margin: 0 auto 5px;
+		height: 15px;
+		margin-bottom: 2px;
+		position: relative;
+		width: 15px;
+	}
+}
+
+.expanded {
+    background: #ccc;
+}
+
+#nav-menu {
+	width: 150px;
+}
+	
+@media screen and (min-width: 544px) {
+    .menu-btn {
+        display: none;
+    }
+	.nav-menu-btn {
+		display: none;
+	}
+}
+
+.nav {
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+}
+
+.navigation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        height: 0;
+    }
+    nav.expanded {
+        height: auto;  
+    }
 }
 
 .container-all {
@@ -1022,20 +1113,37 @@ a {
 
 .heading {
 	float: left;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 .starbucks-logo {
-	height: 5em;
 	float: left;
-	margin-right: 25px;
+	padding: 0px;
 }
 
 .the-starbucks-foundation {
 	font-weight: bold;
 	color: #E07E52;
-	font-size: 2em;
-	margin-top: 35px;
+	font-size: 200%;
+	margin-top: 50px;
+	padding-left: 30px;
+	text-align: baseline;
+}
+
+@media screen and (max-width: 768px) {
+	.the-starbucks-foundation {
+		font-size: 100%;
+		margin-top: 25px;
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	.the-starbucks-foundation {
+		font-size: 100%;
+		margin-top: 25px;
+		padding-left: 0px;
+	}
 }
 
 .title-image {
@@ -1043,21 +1151,33 @@ a {
 	left: -1em;
 }
 
-.starbucks-employees, .indian-students, .four-grads, .veteran-family {
+.starbucks-employees, .indian-students, .four-grads, .veteran-family, .two-farmers {
 	margin-top: 25px;
+	margin-left: 0px;
+	padding-left: 0px;
 	width: 100%;
+
 }
 
 .black-box-title {
 	color: #FFFFFF;
-	background-color: #000000;
+	background-color: rgba(0,0,0,0.75);
 	top: 0px;
-	right: 0px;
+	right: 10px;
 	position: absolute;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 20px;
-	width: 30%;
+	width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+	.black-box-title {
+		width: 100%;
+		float: left;
+		clear: both;
+		background-color: rgba(0,0,0,0.5);
+	}
 }
 
 .description {
@@ -1080,6 +1200,7 @@ a {
 	background-color: #414042;
 	width: 100%;
 	margin-top: 25px;
+	margin-bottom: 25px;
 	padding-top: 50px;
 	padding-bottom: 75px;
 }
@@ -1095,12 +1216,14 @@ a {
 
 .cup-with-cap {
 	float: left;
+	margin-bottom: 25px;
 }
 
 .black-text-1 {
 	color: #FFFFFF;
 	float: left;
 	padding-left: 25px;
+	margin-right: 0px;
 }
 
 .black-text-2 {
@@ -1109,11 +1232,22 @@ a {
 	clear: both;
 	margin-top: 25px;
 	margin-left: 0px;
-	margin-right: 25px;
+	padding-right: 25px;
+}
+
+@media screen and (max-width: 767px) {
+	.black-text-1 {
+		margin-right: 0px;
+		padding-left: 25px;
+	}
+	
+	.black-text-2 {
+		margin-left: 0px;
+		padding-right: 25px;
+	}
 }
 
 .hug {
-	float: left;
 	margin-top: 25px;
 }
 
@@ -1139,11 +1273,13 @@ a {
 	float: left;
 	clear: both;
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 .asu-description, .veteran-college-description {
 	padding-left: 25px;
 	float: left;
+	margin-bottom: 25px;
 }
 
 footer {
@@ -1159,6 +1295,13 @@ footer {
 	margin-right: 200px;	
 }
 
+@media screen and (max-width: 544px) {
+	.footer-text {
+		float: right;
+		margin-right: 15px;
+	}
+}
+
 .terms-policies {
 	text-decoration: none;
 	color: #FFFFFF;
@@ -1167,7 +1310,6 @@ footer {
 .questions-comments {
 	color: #FFFFFF;
 	background-color: #414042;
-	width: 100%;
 	font-size: 1.5em;
 	margin-top: 1em;
 	padding-top: 25px;
@@ -1176,28 +1318,75 @@ footer {
 	padding-right: 25px;
 }
 
+@media screen and (max-width: 543px) {
+	.questions-comments {
+		color: #FFFFFF;
+		background-color: #414042;
+		font-size: 1em;
+		margin-top: 1em;
+		padding-top: 25px;
+		padding-bottom: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
 .starbucks-signage {
 	float: left;
 	margin-top: 1em;
 	margin-left: -1em;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
 }
 
 .form-contact {
 	color: #FFFFFF;
 	background-color: #976463;
-	width: 30em;
-	height: 451px;
 	float: left;
 	margin-top: 1.15em;
 	margin-left: -2.25em;	
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 0.875em;
 }
 
+@media screen and (max-width: 768px) {
+	.form-contact {
+		color: #FFFFFF;
+		background-color: #976463;
+		float: left;
+		margin-top: 1.15em;
+		margin-left: 0em;	
+		padding: 25px 75px 85px 75px;
+		font-size: 0.875em;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	.form-contact {
+		color: #FFFFFF;
+		background-color: #976463;
+		width: 100%;
+		float: left;
+		margin-top: 1.15em;
+		margin-left: 0em;
+		padding: 30px 30px 50px 30px;	
+		font-size: 0.75em;
+	}
+}
+
 .attributes {
 	margin-right: 1em;
+}
+
+select {
+	float: right;
+	background-color: #ccc;
+	color: #000000;
+	margin: 0px;
 }
 
 .input-text {
@@ -1209,8 +1398,8 @@ footer {
 }
 
 .input-send {
-	color: #000000;
-	background-color: #7FCFD5;
+	color: #FFFFFF;
+	background-color: #067655;
 	margin-top: 1.5em;
 	margin-right: 10px;
 	padding-top: 5px;
@@ -1222,22 +1411,36 @@ footer {
 
 .starbucks-corporation-info {
 	float: left;
-	width: 16em;
 	margin-top: 1.5em;
 	font-size: 0.875em;
+}
+
+@media screen and (max-width: 768px) {
+	.starbucks-corporation-info {
+		float: left;
+		margin-top: 1.5em;
+	}
 }
 
 .youth-text-box {
 	float: left;
 	padding-top: 25px;
-	width: 100%;
+	margin-left: -2em;
+}
+
+@media screen and (max-width: 768px) {
+	.youth-text-box {
+		float: left;
+		padding-top: 25px;
+		margin-left: 0px;
+	}
 }
 
 .youth-description {
 	margin-bottom: 25px;
 }
 
-.youth-headings, .farming-headings {
+.youth-headings, .veteran-headings, .farming-headings {
 	font-size: 1em;
 	color: #E07E52;
 }
@@ -1245,17 +1448,26 @@ footer {
 .youth-programs-list{
 	margin-bottom: 25px;
 	float: left;
-	
 }
 
 .bamozai-students {
-	margin-top: 25px;
+	float: right;
 	width: 100%;
-	float: left;
+	margin-bottom: 25px;
 }
 
 .youth-programs-image {
 	margin-top: 25px;
+	margin-left: 0px;
+	width: 100%;
+	padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+	.youth-programs-image {
+		padding: 0px;
+		margin: 0px;
+	}
 }
 
 .youth-grant-recipients-title {
@@ -1267,12 +1479,20 @@ footer {
 	color: #FFFFFF;
 	background-color: #976463;
 	margin-top: 25px;
-	margin-left: -15px;
+	margin-left: 0px;
 	padding-top: 15px;
 	padding-bottom: 20px;
 	padding-left: 5px;
 	padding-right: 25px;
 	font-size: 0.75em;
+}
+
+@media screen and (max-width: 768px) {
+	.youth-grant-recipients {
+		margin-left: 0px;
+		font-size: 1em;
+		width: 100%;
+	}
 }
 
 .veterans-text-box {
@@ -1338,17 +1558,51 @@ legend {
 	margin-top: 50px;
 }
 
-.partner {
-	width: 33.333%;
-	height: 100%;
-	padding: 25px;
-	vertical-align: middle;
+.heading-our-partners {
+	color: #E07E52;
+	font-size: 2em;
+}
 
-	float: left;
+.partner {
+	min-height: 250px;
 }
 
 .logo {
-	width: 95%;
+	padding: 25px;  
+}
+
+@media screen and (max-width: 768px) {
+	.partner {
+		min-height: 130px;
+	}
+	.logo {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	.partner {
+		min-height: 75px;
+	}
+	.logo {
+		padding: 10px;
+	}
+}
+
+.top-border {
+	border-top: 1px solid #976463;
+}
+
+.bottom-border {
+	border-bottom: 1px solid #976463;
+}
+
+.left-border {
+	border-left: 1px solid #976463;
+}
+
+.right-border {
+	border-right: 1px solid #976463;
 }
 
 .welcome {
@@ -1370,32 +1624,54 @@ legend {
 }
 
 .graduates-line {
-	width: 100%;
+	width: 102%;
 	margin-top: 25px;
+	margin-right: -2em;
 }
 
 .call-to-action-college {
-	width: 65%;
 	float: right;
-	top: -96px;
+	position: relative;
+	bottom: 97px;
+	right: 15px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 544px) {
+	.call-to-action-college {
+		float: right;
+		position: relative;
+		bottom: 60px;
+		right: 15px;
+		background-color: rgba(0,0,0,0.5);
+	}
 }
 
 .call-to-action-college-text {
-	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;
-	float: right;
 	text-align: right;
 	font-size: 1.5em;
-	position: relative;
 	padding: 15px;
 }
 
-.arrow {
-	width: 5%;
-	float: right;
-	
+@media screen and (max-width: 544px) {
+	.call-to-action-college-text {
+		color: #FFFFFF;
+		text-align: right;
+		font-size: 0.50em;
+		padding: 15px;
+	}
 }
 
+.confirm-card, .confirm-contact {
+	font-size: 1.5em;
+	margin-top: 25px;
+}
+
+.return {
+	margin-top: 25px;
+	margin-bottom: 500px;
+}
 	
 /* ==========================================================================
    Helper classes
